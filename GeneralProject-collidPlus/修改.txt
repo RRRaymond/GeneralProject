@@ -1,0 +1,17 @@
+轨迹效果：
+导入资源follower
+设置参数
+0.5 0.4
+1.0 0.2
+1.5 0.1
+
++1效果：
+导入资源+1
+设置坐标（-1.5，-3.25）
+添加脚本transparent
+设置interval 0.5
+
+爆炸效果：
+导入资源explosion
+在stone脚本中添加变量即代码
+将资源explosion拖入stone的参数
