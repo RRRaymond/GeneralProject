@@ -31,7 +31,7 @@ public class state : MonoBehaviour {
 			Channel = herostate.left;
 			iTween.MoveTo(hero,iTween.Hash(
 				"position", hero.transform.position + new Vector3(-2, 0,0),
-				"time", 1.2f, 
+				"time", 0.4f, 
 				"easetype", iTween.EaseType.easeInBack,
 				"oncomplete", "unlock"
 				));
@@ -41,7 +41,7 @@ public class state : MonoBehaviour {
 			Channel = herostate.right;
 			iTween.MoveTo(hero,iTween.Hash(
 				"position", hero.transform.position + new Vector3(2, 0,0),
-				"time", 1.2f, 
+				"time", 0.4f, 
 				"easetype", iTween.EaseType.easeInBack,
 				"oncomplete", "unlock"
 				));
