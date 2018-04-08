@@ -30,10 +30,11 @@ public class SwitchScene : MonoBehaviour {
 				SceneManager.LoadScene("Game3");
 				break;
 			case "return":
+                Time.timeScale = 0;
                 GameObject.Find("pause").GetComponent<CanvasGroup>().alpha = 1;
                 GameObject.Find("pause").GetComponent<CanvasGroup>().interactable = true;
                 GameObject.Find("pause").GetComponent<CanvasGroup>().blocksRaycasts = true;
-                Time.timeScale = 0;
+                
 				break;
 			case "left_collider":
 				moveHeroes("leftHero");

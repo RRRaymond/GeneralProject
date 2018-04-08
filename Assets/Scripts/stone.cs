@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class stone : MonoBehaviour {
     public int m_point = 1;
@@ -28,7 +29,8 @@ public class stone : MonoBehaviour {
                 if (this.transform.position.x < 0)
                 {
                     //Destroy(GameObject.FindGameObjectWithTag("leftHero"));
-                    Game1Manager.Instance.flag = true;
+                    //Game1Manager.Instance.flag = true;
+                    Game1Manager.Instance.final();
                 }
 
             }
@@ -40,10 +42,12 @@ public class stone : MonoBehaviour {
             if (other.tag.CompareTo("rightHero") == 0)
             {
                 Instantiate(explosion, other.transform.position, other.transform.rotation);
-                Destroy(this.gameObject);
-                Destroy(other.gameObject);
-                Game1Manager.Instance.flag = true;
-
+                //Destroy(this.gameObject);
+                this.gameObject.SetActive(false);
+                //Destroy(other.gameObject);
+                other.gameObject.SetActive(false);
+                //Game1Manager.Instance.flag = true;
+                Game1Manager.Instance.final();
             }
         }
         
