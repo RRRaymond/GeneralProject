@@ -10,6 +10,7 @@ public class Game2_HeroMove : MonoBehaviour {
 	private bool direction;
 	private float tempAngle;
 	private bool istouched;
+    public float speed = 1;
 	// Use this for initialization
 	void Start () {
 		direction = false;
@@ -31,8 +32,8 @@ public class Game2_HeroMove : MonoBehaviour {
 	
 	void rotate (bool direction, float deltaTime){
 		Vector3 tempPosition = new Vector3();
-		int direct = direction?1:-1;
-		tempAngle = direct * deltaTime + tempAngle;
+		int direct = direction?-1:1;
+		tempAngle = direct * deltaTime * speed + tempAngle;
 		tempPosition.x = centerPoint.x + Mathf.Cos(tempAngle) * radiusLength;
 		tempPosition.y = centerPoint.y + Mathf.Sin(tempAngle) * radiusLength;
 		tempPosition.z = 0;
