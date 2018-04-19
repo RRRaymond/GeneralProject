@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Game2_block : MonoBehaviour {
     public int m_point = 1;
-
+    public GameObject explosion;
     void Start () {
 	}
 
@@ -27,6 +27,7 @@ public class Game2_block : MonoBehaviour {
         //碰到球，结束。
         if (other.tag.CompareTo("Player") == 0)
         {
+            //Instantiate(explosion, other.transform.position, other.transform.rotation);
             Game1Manager.Instance.final();
         }
 
