@@ -28,13 +28,14 @@ public class Game2_block : MonoBehaviour {
         if (other.tag.CompareTo("Player") == 0)
         {
             //Instantiate(explosion, other.transform.position, other.transform.rotation);
-            Game1Manager.Instance.final();
+            Game2Manager.Instance.final();
         }
 
         //碰到下底面，即安全避过，加分+消失
         if (other.tag.CompareTo("wall") == 0)
         {
-            Game1Manager.Instance.AddScore(m_point);
+            Game2Manager.Instance.AddScore(m_point);
+            //Game1Manager.Instance.AddScore(m_point);
             Destroy(this.gameObject);
         }
     }
