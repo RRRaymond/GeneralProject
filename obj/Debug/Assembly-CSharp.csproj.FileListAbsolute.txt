@@ -38,3 +38,4 @@ E:\My_Notebook\_semester\专综\github\demo2.0\GeneralProject\Temp\bin\Debug\Uni
 E:\My_Notebook\_semester\专综\github\demo2.0\GeneralProject\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
 E:\My_Notebook\_semester\专综\github\demo2.0\GeneralProject\obj\Debug\Assembly-CSharp.dll
 E:\My_Notebook\_semester\专综\github\demo2.0\GeneralProject\obj\Debug\Assembly-CSharp.pdb
+E:\My_Notebook\_semester\专综\github\demo3.0-d1\GeneralProject\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache

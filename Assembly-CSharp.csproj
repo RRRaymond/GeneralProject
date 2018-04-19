@@ -44,10 +44,10 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>E:/unity/Editor/Data/Managed\UnityEngine.dll</HintPath>
+      <HintPath>F:/Unity/unity/Editor/Data/Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>E:/unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>F:/Unity/unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -58,19 +58,19 @@
      <Compile Include="Assets\Scripts\BtnContinue.cs" />
      <Compile Include="Assets\Scripts\BtnReturn.cs" />
      <Compile Include="Assets\Scripts\Game1\BtnRestart.cs" />
+     <Compile Include="Assets\Scripts\Game1\Game1Manager.cs" />
      <Compile Include="Assets\Scripts\Game1\left_stoneSpawn.cs" />
      <Compile Include="Assets\Scripts\Game1\right_stoneSpawn.cs" />
      <Compile Include="Assets\Scripts\Game1\state.cs" />
      <Compile Include="Assets\Scripts\Game1\stone.cs" />
      <Compile Include="Assets\Scripts\Game1\stoneSpawn.cs" />
-     <Compile Include="Assets\Scripts\Game1Manager.cs" />
      <Compile Include="Assets\Scripts\Game2\BtnPause.cs" />
      <Compile Include="Assets\Scripts\Game2\BtnRestart2.cs" />
      <Compile Include="Assets\Scripts\Game2\Game2_block.cs" />
      <Compile Include="Assets\Scripts\Game2\Game2_blockSpawn.cs" />
      <Compile Include="Assets\Scripts\Game2\Game2_drawCircle.cs" />
      <Compile Include="Assets\Scripts\Game2\Game2_HeroMove.cs" />
-     <Compile Include="Assets\Scripts\Game2\Game2_player.cs" />
+     <Compile Include="Assets\Scripts\Game2\Game2Manager.cs" />
      <Compile Include="Assets\Scripts\SwitchScene.cs" />
      <Compile Include="Assets\Space Shooter Template FREE\Scripts\absorbleft.cs" />
      <Compile Include="Assets\Space Shooter Template FREE\Scripts\absorbright.cs" />
@@ -88,36 +88,37 @@
      <Compile Include="Assets\Space Shooter Template FREE\Scripts\PoolingController.cs" />
      <Compile Include="Assets\Space Shooter Template FREE\Scripts\Projectile.cs" />
      <Compile Include="Assets\Space Shooter Template FREE\Scripts\RepeatingBackground.cs" />
+     <Compile Include="Assets\Space Shooter Template FREE\Scripts\roteta.cs" />
      <Compile Include="Assets\Space Shooter Template FREE\Scripts\Transparent.cs" />
      <Compile Include="Assets\Space Shooter Template FREE\Scripts\VisualEffect.cs" />
      <Compile Include="Assets\Space Shooter Template FREE\Scripts\Wave.cs" />
      <None Include="Assets\resources\background\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>F:/Unity/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>E:/unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>F:/Unity/unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>E:/unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>F:/Unity/unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>E:/unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>F:/Unity/unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Timeline">
- <HintPath>E:/unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ <HintPath>F:/Unity/unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UIAutomation">
- <HintPath>E:/unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ <HintPath>F:/Unity/unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.GoogleAudioSpatializer">
- <HintPath>E:/unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ <HintPath>F:/Unity/unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>E:/unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>F:/Unity/unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>E:/unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ <HintPath>F:/Unity/unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>

@@ -2119,6 +2119,10 @@ MonoBehaviour:
     type: 2}
   m_block_square: {fileID: 4462530868681816, guid: f47190648f2ed7145bb4867f2e2d9c98,
     type: 2}
+  interval_ms: 250
+  interval_range: 100
+  interval_long_short: 1
+  interval_long_long: 1.35
 --- !u!4 &1364727074
 Transform:
   m_ObjectHideFlags: 0
