@@ -71,6 +71,10 @@
      <Compile Include="Assets\Scripts\Game2\Game2_drawCircle.cs" />
      <Compile Include="Assets\Scripts\Game2\Game2_HeroMove.cs" />
      <Compile Include="Assets\Scripts\Game2\Game2Manager.cs" />
+     <Compile Include="Assets\Scripts\Game3\Game3generator.cs" />
+     <Compile Include="Assets\Scripts\Game3\Game3moveBac.cs" />
+     <Compile Include="Assets\Scripts\Game3\Game3moveCamera.cs" />
+     <Compile Include="Assets\Scripts\Game3\Game3stone.cs" />
      <Compile Include="Assets\Scripts\SwitchScene.cs" />
      <Compile Include="Assets\Space Shooter Template FREE\Scripts\absorbleft.cs" />
      <Compile Include="Assets\Space Shooter Template FREE\Scripts\absorbright.cs" />
