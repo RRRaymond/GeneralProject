@@ -7,6 +7,7 @@ public class Game3generator : MonoBehaviour {
 	public Transform m_stone1;
 	public Transform m_stone2;
 	public Transform m_stone3;
+
 	protected Transform m_transform;
 
 	public int interval_ms = 100;
@@ -36,7 +37,7 @@ public class Game3generator : MonoBehaviour {
 		new_postion.y = speed_persec * cur_y;
 
 
-		Transform m_stone;
+		Object m_stone;
 		int temp1 = Random.Range (0, 100);
 		if (temp1 % 3 == 0)
 			m_stone = m_stone1;

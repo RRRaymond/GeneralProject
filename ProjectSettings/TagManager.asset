@@ -11,6 +11,7 @@ TagManager:
   - score
   - hscore
   - mscore
+  - enemy
   layers:
   - Default
   - TransparentFX

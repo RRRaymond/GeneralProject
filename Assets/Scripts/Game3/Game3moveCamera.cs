@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class Game3moveCamera : MonoBehaviour {
 
-	public float speed_up = 2;
-
+	private GameObject player;
 	// Use this for initialization
 	void Start () {
-		
+		player = GameObject.Find("player");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 curpos = this.transform.position;
-		curpos.y = curpos.y + speed_up * Time.deltaTime;
-		this.transform.position = curpos;
+		var pos = this.transform.position;
+		pos.y = player.transform.position.y+3;
+		this.transform.position = pos;
 	}
 }
