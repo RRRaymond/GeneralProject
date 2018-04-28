@@ -5,10 +5,10 @@ using UnityEngine;
 public class Game3Hero : MonoBehaviour {
 
 	public float speed = 1;
-	private GameObject minEnemy;
-	private float mindistance;
+	public GameObject minEnemy;
+	public float mindistance;
 	public float direction = Mathf.PI/2f;
-	private bool isrotating = false;
+	public bool isrotating = false;
 	public Game3touch game3Touch;
 	// Use this for initialization
 	void Start () {
@@ -23,6 +23,8 @@ public class Game3Hero : MonoBehaviour {
 				return;
 			}
 			checkEnemy();
+            if (mindistance == 100000000000)
+                return;
 			if(checkDistance()){
 				Vector3 tempPosition = this.transform.position;
 				Vector3 center = minEnemy.transform.position;
@@ -48,6 +50,8 @@ public class Game3Hero : MonoBehaviour {
 	//find nearest enemy
 	void checkEnemy(){
 		var enemies = GameObject.FindGameObjectsWithTag("enemy");
+        if (enemies == null)
+            return;
 		mindistance = 100000000000;
 		foreach(GameObject enemy in enemies){
 			float distance = (this.transform.position - enemy.transform.position).magnitude;
@@ -56,7 +60,6 @@ public class Game3Hero : MonoBehaviour {
 				minEnemy = enemy;
 			}
 		}
-		
 	}
 
 	void linearMotion(){
@@ -85,27 +88,9 @@ public class Game3Hero : MonoBehaviour {
 			direction-=2*Mathf.PI;
 		else if(direction<-Mathf.PI)
 			direction+=2*Mathf.PI;
-		Debug.Log(direction);
 	}
 
 	bool checkDistance(){
-		// float verticaldistance;
-		// //直线点斜式 y-y0=k(x-x0) ->  kx - y + y0-kx0 = 0
-		// direction %= Mathf.PI;
-		// float k = Mathf.Tan(direction);
-		// if(Mathf.Abs(direction-Mathf.PI/2)<0.01)
-		// 	k=1000000000;
-		// else if(Mathf.Abs(direction+Mathf.PI/2)<0.01)
-		// 	k=-1000000000;
-		// float x0 = this.transform.position.x;
-		// float y0 = this.transform.position.y;
-		// float A = k;
-		// float B = -1;
-		// float C = y0 - k * x0;
-		// var enemyPostion = minEnemy.transform.position;
-		// verticaldistance = Mathf.Abs(A*enemyPostion.x + B*enemyPostion.y + C)/Mathf.Sqrt(A*A+B*B);
-		// if(Mathf.Abs(verticaldistance - mindistance)<0.002)
-		// 	return true;
 		Vector3 vec1 = new Vector3(Mathf.Cos(direction), Mathf.Sin(direction), 0);
 		Vector3 vec2 = this.transform.position - minEnemy.transform.position;
 		float flag = Vector3.Dot(vec1, vec2);

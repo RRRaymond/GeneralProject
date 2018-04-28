@@ -27,14 +27,14 @@ public class Game3generator : MonoBehaviour {
 	{
 		double maxstep0 = (interval_offset / ((cnt / 15) + 1) + interval_ms);
 		int maxstep = (int)(maxstep0);
-		float timestep = Random.Range(interval_ms, maxstep) / 100;
+        float timestep = Random.Range(interval_ms, maxstep) / 100.0f;
 		yield return new WaitForSeconds (timestep);
 
 		Vector3 new_postion = m_transform.position;
 		int temp = Random.Range (-280, 280);
 		new_postion.x = temp/100.0f;
 		cur_y = cur_y + timestep;
-		new_postion.y = speed_persec * cur_y;
+		new_postion.y = speed_persec * cur_y + 9;
 
 
 		Object m_stone;

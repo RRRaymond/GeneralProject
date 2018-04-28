@@ -8,10 +8,10 @@ public class Game3stone : MonoBehaviour {
 	void Start () {
 		
 	}
-	void OnBecameInvisible()  
-	{  
-		Destroy(this.gameObject);
-	} 
+	//void OnBecameInvisible()  
+	//{  
+	//	Destroy(this.gameObject);
+	//} 
 	// Update is called once per frame
 	void Update () {
 		

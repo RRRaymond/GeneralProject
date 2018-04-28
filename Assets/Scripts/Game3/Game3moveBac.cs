@@ -12,17 +12,17 @@ public class Game3moveBac : MonoBehaviour {
 		
 	}
 
-	void OnBecameInvisible()  
-	{  
-		Destroy(this.gameObject);  
-	} 
+	//void OnBecameInvisible()  
+	//{  
+	//	Destroy(this.gameObject);  
+	//} 
 
 	bool f = true;
 
 	// Update is called once per frame
 	void Update () {
 		GameObject m_camera = GameObject.Find("MainCamera");
-		if (f && this.transform.position.y - m_camera.transform.position.y > 6) {
+		if (f && m_camera.transform.position.y - this.transform.position.y > 6) {
 			f = false;
 			Vector3 new_position = this.transform.position;
 			new_position.y += 26.5f;
