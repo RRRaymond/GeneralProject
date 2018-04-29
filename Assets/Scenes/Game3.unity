@@ -1286,6 +1286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   game3Hero: {fileID: 326012944}
   width: 0.3
+  time: 5
 --- !u!1 &887693910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,7 +1544,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4140786686005264, guid: bbbdd52f832588f4d8180627cb1c88fc, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114351396006535854, guid: bbbdd52f832588f4d8180627cb1c88fc,
         type: 2}
@@ -2184,7 +2185,6 @@ GameObject:
   - component: {fileID: 1979212269}
   - component: {fileID: 1979212268}
   - component: {fileID: 1979212267}
-  - component: {fileID: 1979212273}
   - component: {fileID: 1979212274}
   m_Layer: 0
   m_Name: MainCamera
@@ -2274,17 +2274,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1979212273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1979212266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88a37dc32bad2448b2acd88db684204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1979212274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2296,6 +2285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 962f3c6555c72454c9bc760f10db8cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  move: 0.5
 --- !u!1 &1989842064
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,7 +2330,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2090366063
 GameObject:

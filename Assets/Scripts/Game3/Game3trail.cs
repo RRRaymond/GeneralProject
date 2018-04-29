@@ -5,6 +5,7 @@ using UnityEngine;
 public class Game3trail : MonoBehaviour {
     public Game3Hero game3Hero;
     public float width;
+    public float time;
     private Color[] colors;
     private TrailRenderer tr;
     private int index = 0;
@@ -14,6 +15,7 @@ public class Game3trail : MonoBehaviour {
         tr = GetComponent<TrailRenderer>();
         tr.startWidth = width;
         tr.endWidth = width;
+        tr.time = time;
         colors = new Color[7];
         colors[0] = new Color(1, 0.27f, 0);
         colors[1] = new Color(1, 0.55f, 0);
