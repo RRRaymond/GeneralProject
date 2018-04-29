@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4885528810816044}
   - component: {fileID: 212970138634032560}
   - component: {fileID: 114919904820739278}
+  - component: {fileID: 114715070756493976}
   m_Layer: 0
   m_Name: game3stone1
   m_TagString: enemy
@@ -41,6 +42,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114715070756493976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1124239557567412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58730a18932f2d145a49b2eedf7ddf50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114919904820739278
 MonoBehaviour:
   m_ObjectHideFlags: 1

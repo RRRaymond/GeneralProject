@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4870456545077914}
   - component: {fileID: 212052432825350788}
   - component: {fileID: 114105107913838308}
+  - component: {fileID: 114259799918537432}
   m_Layer: 0
   m_Name: game3stone2
   m_TagString: enemy
@@ -50,6 +51,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09aae37cbc17322479777b637bbb68cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114259799918537432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1877208190106222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58730a18932f2d145a49b2eedf7ddf50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212052432825350788
