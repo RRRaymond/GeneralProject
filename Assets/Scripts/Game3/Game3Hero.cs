@@ -10,6 +10,7 @@ public class Game3Hero : MonoBehaviour {
 	public float direction = Mathf.PI/2f;
 	public bool isrotating = false;
 	public Game3touch game3Touch;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -17,31 +18,43 @@ public class Game3Hero : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(game3Touch.checktouch()){
-			if(isrotating){
-				circularMotion();
-				return;
-			}
-			checkEnemy();
+        float hight = this.transform.position.y;
+        float x = this.transform.position.x;
+        if (Game3Manager.Instance.m_score < hight)
+            Game3Manager.Instance.ChangeScore(hight);
+        if (game3Touch.checktouch())
+        {
+            if (isrotating)
+            {
+                circularMotion();
+                return;
+            }
+            checkEnemy();
             if (mindistance == 100000000000)
                 return;
-			if(checkDistance()){
-				Vector3 tempPosition = this.transform.position;
-				Vector3 center = minEnemy.transform.position;
-				tempAngle = Mathf.Atan2(tempPosition.y-center.y,tempPosition.x-center.x);
-				var flag = (tempAngle+Mathf.PI/2-direction)%(2*Mathf.PI);
-				Vector3 radialVector = tempPosition-center;
-				Vector3 tangentialVector = new Vector3(radialVector.y, -radialVector.x, 0);
-				Vector3 directionVector = new Vector3(Mathf.Cos(direction), Mathf.Sin(direction), 0);
-				if(Vector3.Dot(tangentialVector, directionVector)>0){
-					clockwise=-1;
-				}else{
-					clockwise=1;
-				}
-				circularMotion();
-				return;
-			}
-		}
+            if (checkDistance())
+            {
+                Vector3 tempPosition = this.transform.position;
+                Vector3 center = minEnemy.transform.position;
+                tempAngle = Mathf.Atan2(tempPosition.y - center.y, tempPosition.x - center.x);
+                var flag = (tempAngle + Mathf.PI / 2 - direction) % (2 * Mathf.PI);
+                Vector3 radialVector = tempPosition - center;
+                Vector3 tangentialVector = new Vector3(radialVector.y, -radialVector.x, 0);
+                Vector3 directionVector = new Vector3(Mathf.Cos(direction), Mathf.Sin(direction), 0);
+                if (Vector3.Dot(tangentialVector, directionVector) > 0)
+                {
+                    clockwise = -1;
+                }
+                else
+                {
+                    clockwise = 1;
+                }
+                circularMotion();
+                return;
+            }
+        }
+        else if (x > 3.8 || x < -3.8)
+            Game3Manager.Instance.final();
 		isrotating = false;
 		linearMotion();
 
@@ -108,4 +121,16 @@ public class Game3Hero : MonoBehaviour {
 		}
 		return false;
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("碰撞产生，collid happened!!!");
+        //碰到球，结束。
+        if (other.tag.CompareTo("enemy") == 0)
+        {
+            Debug.Log("碰到球了，collid happened!!!");
+            Game3Manager.Instance.final();
+        }
+        
+    }
 }

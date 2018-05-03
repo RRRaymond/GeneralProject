@@ -14,7 +14,6 @@ public class BtnRestart2 : MonoBehaviour {
     }
     private void OnClick()
     {
-        Debug.Log("正常调用了点击事件 2");
         Time.timeScale = 1;
         SceneManager.LoadScene("Game2");
     }

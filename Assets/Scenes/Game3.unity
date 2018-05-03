@@ -419,7 +419,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000009934108, y: 0}
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 398007627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fb5090aa7c368d4cb8235dd6620e979, type: 3}
+  m_Script: {fileID: 11500000, guid: db7a72b253718494baa20503fd56c247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &398007630
@@ -908,6 +908,7 @@ GameObject:
   - component: {fileID: 792214059}
   - component: {fileID: 792214058}
   - component: {fileID: 792214057}
+  - component: {fileID: 792214060}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -960,6 +961,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &792214060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 792214056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c01741230764084fb58225e92108bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_score: 0
 --- !u!1 &809308979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,7 +2391,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2090366063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fb5090aa7c368d4cb8235dd6620e979, type: 3}
+  m_Script: {fileID: 11500000, guid: db7a72b253718494baa20503fd56c247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2090366066
