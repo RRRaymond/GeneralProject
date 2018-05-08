@@ -7,8 +7,9 @@ public class Game3generator : MonoBehaviour {
 	public Transform m_stone1;
 	public Transform m_stone2;
 	public Transform m_stone3;
+    public GameObject light;
 
-	protected Transform m_transform;
+    protected Transform m_transform;
 
 	public int interval_ms = 100;
 	public int interval_offset = 100;
@@ -47,7 +48,8 @@ public class Game3generator : MonoBehaviour {
 			m_stone = m_stone3;
 		
 		Object cloneObj = Instantiate (m_stone, new_postion, Quaternion.identity);
-		cnt++;
+        Object effect = Instantiate(light, new_postion, Quaternion.identity);
+        cnt++;
 		StartCoroutine (SpawnStone());
 	}
 

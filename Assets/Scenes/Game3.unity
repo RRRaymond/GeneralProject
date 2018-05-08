@@ -2329,6 +2329,7 @@ MonoBehaviour:
   m_stone1: {fileID: 4885528810816044, guid: dbb4f9dd2a656fd4d9d49043e2b63785, type: 2}
   m_stone2: {fileID: 4870456545077914, guid: 8d5da9f9d5e939741a05a622ce2f54dd, type: 2}
   m_stone3: {fileID: 4903992496991206, guid: c1128dec498e5834b996495d16d4e05e, type: 2}
+  light: {fileID: 1334696238719070, guid: 8c5ca43d0318bf349a85a062c04f5332, type: 2}
   interval_ms: 30
   interval_offset: 50
   speed_persec: 10

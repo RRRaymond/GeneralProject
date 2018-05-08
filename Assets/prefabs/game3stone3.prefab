@@ -96,11 +96,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1836963757017856}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58730a18932f2d145a49b2eedf7ddf50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  light: {fileID: 0}
 --- !u!212 &212178644260093688
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -115,7 +116,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
