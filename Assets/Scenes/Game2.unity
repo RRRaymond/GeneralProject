@@ -1271,33 +1271,33 @@ TrailRenderer:
       m_RotationOrder: 0
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.75131994, g: 0.376622, b: 0.9485294, a: 1}
-      key1: {r: 0.70322007, g: 0.23713236, b: 0.9485294, a: 1}
-      key2: {r: 0.6786183, g: 0.59039795, b: 0.9558824, a: 1}
-      key3: {r: 0.44767925, g: 0.29065743, b: 0.9411765, a: 1}
-      key4: {r: 0.6244631, g: 0.7835973, b: 0.96885794, a: 0}
-      key5: {r: 0.729194, g: 0.9485294, b: 0.55098397, a: 0}
+      key0: {r: 0.9558824, g: 0.87483597, b: 0.42171282, a: 1}
+      key1: {r: 0.95653117, g: 0.767784, b: 0.430217, a: 1}
+      key2: {r: 0.95131844, g: 1, b: 0.11764705, a: 1}
+      key3: {r: 0.83823526, g: 0.82157254, b: 0.23421282, a: 1}
+      key4: {r: 0.82110715, g: 0.85294116, b: 0.27595156, a: 1}
+      key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 1, b: 1, a: 0}
       key7: {r: 1, g: 1, b: 1, a: 0}
       ctime0: 0
-      ctime1: 8481
-      ctime2: 18504
-      ctime3: 29491
-      ctime4: 46453
-      ctime5: 57440
+      ctime1: 12914
+      ctime2: 38743
+      ctime3: 52235
+      ctime4: 65535
+      ctime5: 65535
       ctime6: 65535
       ctime7: 65535
       atime0: 0
-      atime1: 2506
+      atime1: 5012
       atime2: 8288
-      atime3: 65535
-      atime4: 0
+      atime3: 14071
+      atime4: 65535
       atime5: 0
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 7
-      m_NumAlphaKeys: 4
+      m_NumColorKeys: 5
+      m_NumAlphaKeys: 5
     numCornerVertices: 5
     numCapVertices: 5
     alignment: 0
@@ -2369,33 +2369,33 @@ TrailRenderer:
       m_RotationOrder: 0
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.75131994, g: 0.376622, b: 0.9485294, a: 1}
-      key1: {r: 0.70322007, g: 0.23713236, b: 0.9485294, a: 1}
-      key2: {r: 0.6786183, g: 0.59039795, b: 0.9558824, a: 1}
-      key3: {r: 0.44767925, g: 0.29065743, b: 0.9411765, a: 1}
-      key4: {r: 0.6244631, g: 0.7835973, b: 0.96885794, a: 0}
-      key5: {r: 0.729194, g: 0.9485294, b: 0.55098397, a: 0}
+      key0: {r: 0.9558824, g: 0.87483597, b: 0.42171282, a: 1}
+      key1: {r: 0.95653117, g: 0.767784, b: 0.430217, a: 1}
+      key2: {r: 0.95131844, g: 1, b: 0.11764705, a: 1}
+      key3: {r: 0.83823526, g: 0.82157254, b: 0.23421282, a: 1}
+      key4: {r: 0.82110715, g: 0.85294116, b: 0.27595156, a: 1}
+      key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 1, b: 1, a: 0}
       key7: {r: 1, g: 1, b: 1, a: 0}
       ctime0: 0
-      ctime1: 8481
-      ctime2: 18504
-      ctime3: 29491
-      ctime4: 46453
-      ctime5: 57440
+      ctime1: 12914
+      ctime2: 38743
+      ctime3: 52235
+      ctime4: 65535
+      ctime5: 65535
       ctime6: 65535
       ctime7: 65535
       atime0: 0
-      atime1: 2506
+      atime1: 5012
       atime2: 8288
-      atime3: 65535
-      atime4: 0
+      atime3: 14071
+      atime4: 65535
       atime5: 0
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 7
-      m_NumAlphaKeys: 4
+      m_NumColorKeys: 5
+      m_NumAlphaKeys: 5
     numCornerVertices: 5
     numCapVertices: 5
     alignment: 0

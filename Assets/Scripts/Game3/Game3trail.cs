@@ -17,13 +17,13 @@ public class Game3trail : MonoBehaviour {
         tr.endWidth = width;
         tr.time = time;
         colors = new Color[7];
-        colors[0] = new Color(1, 0.27f, 0);
-        colors[1] = new Color(1, 0.55f, 0);
-        colors[2] = new Color(1, 0.90f, 0);
-        colors[3] = new Color(0.55f, 1, 0);
-        colors[4] = new Color(0, 0.90f, 0.97f);
-        colors[5] = new Color(0.11f, 0.56f, 1);
-        colors[6] = new Color(0.54f, 0.17f, 0.88f);
+        colors[0] = new Color(0.85f, 0.68f, 0.08f);
+        colors[1] = new Color(0.98f, 0.83f, 0.01f);
+        colors[2] = new Color(0.82f, 0.82f, 0.82f);
+        colors[3] = new Color(0.23f, 0.76f, 0.33f);
+        colors[4] = new Color(0.24f, 0.75f, 0.88f);
+        colors[5] = new Color(0.28f, 0.38f, 0.90f);
+        colors[6] = new Color(0.60f, 0.10f, 0.81f); 
         tr.startColor = colors[index];
         tr.endColor = colors[index];
     }

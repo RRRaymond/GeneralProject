@@ -239,6 +239,7 @@
     <Compile Include="Assets\resources\background\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
     <Compile Include="Assets\resources\background\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
     <Compile Include="Assets\Scripts\BtnContinue.cs" />
+    <Compile Include="Assets\Scripts\BtnPause.cs" />
     <Compile Include="Assets\Scripts\BtnReturn.cs" />
     <Compile Include="Assets\Scripts\Game1\BtnRestart.cs" />
     <Compile Include="Assets\Scripts\Game1\Game1Manager.cs" />
@@ -247,17 +248,18 @@
     <Compile Include="Assets\Scripts\Game1\state.cs" />
     <Compile Include="Assets\Scripts\Game1\stone.cs" />
     <Compile Include="Assets\Scripts\Game1\stoneSpawn.cs" />
-    <Compile Include="Assets\Scripts\Game2\BtnPause.cs" />
     <Compile Include="Assets\Scripts\Game2\BtnRestart2.cs" />
     <Compile Include="Assets\Scripts\Game2\Game2_block.cs" />
     <Compile Include="Assets\Scripts\Game2\Game2_blockSpawn.cs" />
     <Compile Include="Assets\Scripts\Game2\Game2_drawCircle.cs" />
     <Compile Include="Assets\Scripts\Game2\Game2_HeroMove.cs" />
     <Compile Include="Assets\Scripts\Game2\Game2Manager.cs" />
+    <Compile Include="Assets\Scripts\Game3\BtnRestart3.cs" />
     <Compile Include="Assets\Scripts\Game3\Game3circle.cs" />
     <Compile Include="Assets\Scripts\Game3\Game3flicker.cs" />
     <Compile Include="Assets\Scripts\Game3\Game3generator.cs" />
     <Compile Include="Assets\Scripts\Game3\Game3Hero.cs" />
+    <Compile Include="Assets\Scripts\Game3\Game3Manager.cs" />
     <Compile Include="Assets\Scripts\Game3\Game3moveBac.cs" />
     <Compile Include="Assets\Scripts\Game3\Game3moveCamera.cs" />
     <Compile Include="Assets\Scripts\Game3\Game3stone.cs" />
