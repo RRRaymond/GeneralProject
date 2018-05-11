@@ -33,6 +33,7 @@ public class Game3generator : MonoBehaviour {
 
 		Vector3 new_postion = m_transform.position;
 		int temp = Random.Range (-280, 280);
+		while(cnt<5 && temp<50 && temp>-50) temp = Random.Range (-280, 280);
 		new_postion.x = temp/100.0f;
 		cur_y = cur_y + timestep;
 		new_postion.y = speed_persec * cur_y + 9;
