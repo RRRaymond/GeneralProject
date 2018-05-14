@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class state : MonoBehaviour {
 
+    public float speed = 2.5f;
 	private GameObject hero;
 	private bool islocked = false;
 
@@ -31,8 +32,8 @@ public class state : MonoBehaviour {
 			Channel = herostate.left;
 			iTween.MoveTo(hero,iTween.Hash(
 				"position", hero.transform.position + new Vector3(-2, 0,0),
-				"time", 0.4f, 
-				"easetype", iTween.EaseType.easeInBack,
+				"time", 1/speed, 
+				"easetype", iTween.EaseType.easeInQuad,
 				"oncomplete", "unlock"
 				));
 		}
@@ -41,8 +42,8 @@ public class state : MonoBehaviour {
 			Channel = herostate.right;
 			iTween.MoveTo(hero,iTween.Hash(
 				"position", hero.transform.position + new Vector3(2, 0,0),
-				"time", 0.4f, 
-				"easetype", iTween.EaseType.easeInBack,
+				"time", 1/speed, 
+				"easetype", iTween.EaseType.easeInQuad,
 				"oncomplete", "unlock"
 				));
 		}
