@@ -11,13 +11,13 @@ public class Transparent : MonoBehaviour {
 
     void Start () {
         Hide();
+        myscore = 0;
         plusone = GetComponent<Animation>();
-        if(plusone.isPlaying)
+        if (plusone.isPlaying)
         {
             plusone.Stop();
         }
-        score = int.Parse(GameObject.FindGameObjectWithTag("score").GetComponent<Text>().text);
-        myscore = 0;
+        score = 0;
     }
 	
     void Hide()
