@@ -266,7 +266,9 @@
     <Compile Include="Assets\Scripts\Game3\Game3stone.cs" />
     <Compile Include="Assets\Scripts\Game3\Game3touch.cs" />
     <Compile Include="Assets\Scripts\Game3\Game3trail.cs" />
+    <Compile Include="Assets\Scripts\NameOk.cs" />
     <Compile Include="Assets\Scripts\SwitchScene.cs" />
+    <Compile Include="Assets\Scripts\userName.cs" />
     <Compile Include="Assets\Space Shooter Template FREE\Scripts\absorbleft.cs" />
     <Compile Include="Assets\Space Shooter Template FREE\Scripts\absorbright.cs" />
     <Compile Include="Assets\Space Shooter Template FREE\Scripts\Bonus.cs" />
