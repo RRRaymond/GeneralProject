@@ -60,4 +60,9 @@ public class Game3Manager : MonoBehaviour {
         if (m_hiscore < m_score)
             m_hiscore = m_score;
     }
+
+    public int HightScore()
+    {
+        return m_hiscore;
+    }
 }

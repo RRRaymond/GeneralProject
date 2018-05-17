@@ -272,6 +272,7 @@ MonoBehaviour:
   direction: 1.5707964
   isrotating: 0
   game3Touch: {fileID: 76132530}
+  times: 3
 --- !u!58 &326012945
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1830,7 +1831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 430, y: 596.4}
+  m_AnchoredPosition: {x: 430.00262, y: 596.40015}
   m_SizeDelta: {x: 490.79, y: 233.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1757756411

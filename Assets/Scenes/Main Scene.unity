@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 729746449}
   - component: {fileID: 729746450}
   m_Layer: 0
-  m_Name: 00075
+  m_Name: capacity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1255,7 +1255,7 @@ GameObject:
   - component: {fileID: 1342940158}
   - component: {fileID: 1342940159}
   m_Layer: 0
-  m_Name: 00052
+  m_Name: rank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

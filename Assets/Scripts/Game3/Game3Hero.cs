@@ -11,6 +11,9 @@ public class Game3Hero : MonoBehaviour {
 	public bool isrotating = false;
 	public Game3touch game3Touch;
 
+    //位移/分数的倍数
+    public int times = 3;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -18,7 +21,7 @@ public class Game3Hero : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float hight = this.transform.position.y;
+        float hight = this.transform.position.y / times;
         float x = this.transform.position.x;
         if (Game3Manager.Instance.m_score < hight)
             Game3Manager.Instance.ChangeScore(hight);
