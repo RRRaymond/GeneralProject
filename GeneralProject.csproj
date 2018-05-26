@@ -234,6 +234,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\RankZong.cs" />
     <Compile Include="Assets\resources\background\Plugins\Pixelplacement\iTween\iTween.cs" />
     <Compile Include="Assets\resources\background\Plugins\Pixelplacement\iTween\Sample\MoveSample.cs" />
     <Compile Include="Assets\resources\background\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
@@ -241,6 +242,7 @@
     <Compile Include="Assets\Scripts\BtnContinue.cs" />
     <Compile Include="Assets\Scripts\BtnPause.cs" />
     <Compile Include="Assets\Scripts\BtnReturn.cs" />
+    <Compile Include="Assets\Scripts\Capacity.cs" />
     <Compile Include="Assets\Scripts\Game1\BtnRestart.cs" />
     <Compile Include="Assets\Scripts\Game1\Game1Manager.cs" />
     <Compile Include="Assets\Scripts\Game1\left_stoneSpawn.cs" />
@@ -266,6 +268,10 @@
     <Compile Include="Assets\Scripts\Game3\Game3touch.cs" />
     <Compile Include="Assets\Scripts\Game3\Game3trail.cs" />
     <Compile Include="Assets\Scripts\NameOk.cs" />
+    <Compile Include="Assets\Scripts\Rank1.cs" />
+    <Compile Include="Assets\Scripts\Rank2.cs" />
+    <Compile Include="Assets\Scripts\Rank3.cs" />
+    <Compile Include="Assets\Scripts\RankAll.cs" />
     <Compile Include="Assets\Scripts\SwitchScene.cs" />
     <Compile Include="Assets\Scripts\userName.cs" />
     <Compile Include="Assets\Space Shooter Template FREE\Scripts\absorbleft.cs" />
