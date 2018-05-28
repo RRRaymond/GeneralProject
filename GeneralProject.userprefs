@@ -1,11 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rank1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NameOk.cs">
     <Files>
-      <File FileName="Assets/Scripts/RankAll.cs" Line="73" Column="60" />
+      <File FileName="Assets/Scripts/SwitchScene.cs" Line="40" Column="11" />
+      <File FileName="Assets/Scripts/RankAll.cs" Line="52" Column="3" />
       <File FileName="Assets/Scripts/Rank1.cs" Line="39" Column="54" />
       <File FileName="Assets/Scripts/Rank2.cs" Line="49" Column="60" />
-      <File FileName="Assets/Scripts/Rank3.cs" Line="33" Column="54" />
+      <File FileName="Assets/Scripts/Rank3.cs" Line="26" Column="44" />
+      <File FileName="Assets/Scripts/NameOk.cs" Line="26" Column="48" />
+      <File FileName="Assets/Scripts/Capacity.cs" Line="29" Column="13" />
+      <File FileName="Assets/Scripts/Game1/Game1Manager.cs" Line="31" Column="1" />
+      <File FileName="Assets/Scripts/userName.cs" Line="37" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

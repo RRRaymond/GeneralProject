@@ -23,3 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Capacity.unity
     guid: 4319c9e873b1c2b4d99952ac478aea6c
+  - enabled: 1
+    path: Assets/Scenes/Rank.unity
+    guid: 3f78951741752474ab1f77a62fce0084

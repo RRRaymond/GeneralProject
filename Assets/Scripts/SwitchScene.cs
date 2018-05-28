@@ -37,6 +37,9 @@ public class SwitchScene : MonoBehaviour {
             case "capacity":
                 SceneManager.LoadScene("Capacity");
                 break;
+			case "rank":
+				SceneManager.LoadScene("Rank");
+				break;
 			case "left_collider":
 				moveHeroes("leftHero");
 				break;

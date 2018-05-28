@@ -6,11 +6,15 @@ using UnityEngine;
 
 public class NameOk : MonoBehaviour {
 
+	public GameObject go;
+
     // Use this for initialization
     void Start()
     {
         Button btn = this.GetComponent<Button>();
         btn.onClick.AddListener(OnClick);
+		//go.GetComponent<SwitchScene> ().enabled = false;
+		//Debug.Log (go);
     }
 
     private void OnClick()
@@ -20,6 +24,7 @@ public class NameOk : MonoBehaviour {
         {
             GameObject.Find("namePanel").GetComponent<CanvasGroup>().alpha = 0;
             userName.Instance.inputName(inputName.text);
+			go.GetComponent<SwitchScene> ().enabled = true;
         }
     }
 }
