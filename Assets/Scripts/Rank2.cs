@@ -16,8 +16,8 @@ public class Rank2 : MonoBehaviour {
 	void OnClick () {
 		Debug.Log("正常调用了积分榜2事件");
 		this.GetComponent<Image>().sprite = Resources.Load("ji2", typeof(Sprite)) as Sprite;
-		GameObject obj1=GameObject.Find("Canvas/rankall");
-		obj1.GetComponent<Image>().sprite = Resources.Load("zong1", typeof(Sprite)) as Sprite;
+//		GameObject obj1=GameObject.Find("Canvas/rankall");
+//		obj1.GetComponent<Image>().sprite = Resources.Load("zong1", typeof(Sprite)) as Sprite;
 		GameObject obj2=GameObject.Find("Canvas/rank1");
 		obj2.GetComponent<Image>().sprite = Resources.Load("xing1", typeof(Sprite)) as Sprite;
 		GameObject obj3=GameObject.Find("Canvas/rank3");

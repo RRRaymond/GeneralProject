@@ -79,6 +79,7 @@
      <Compile Include="Assets\Scripts\Game3\Game3generator.cs" />
      <Compile Include="Assets\Scripts\Game3\Game3Hero.cs" />
      <Compile Include="Assets\Scripts\Game3\Game3Manager.cs" />
+     <Compile Include="Assets\Scripts\Game3\Game3moveAni.cs" />
      <Compile Include="Assets\Scripts\Game3\Game3moveBac.cs" />
      <Compile Include="Assets\Scripts\Game3\Game3moveCamera.cs" />
      <Compile Include="Assets\Scripts\Game3\Game3stone.cs" />
