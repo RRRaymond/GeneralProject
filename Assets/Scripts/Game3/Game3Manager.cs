@@ -13,6 +13,7 @@ public class Game3Manager : MonoBehaviour {
     public static int m_hiscore = 0;
     //游戏结束判断
     //public bool flag = false;
+    public AudioClip explod;
 
 
     void Awake()
@@ -42,8 +43,10 @@ public class Game3Manager : MonoBehaviour {
     }
     public void final()
     {
-        Debug.Log("进入了manager");
         Time.timeScale = 0;
+        GameObject.Find("EventSystem").GetComponent<AudioSource>().Stop();
+        AudioSource.PlayClipAtPoint(explod, GameObject.Find("MainCamera").transform.localPosition);
+        
         GameObject.FindGameObjectWithTag("mscore").GetComponent<Text>().text = m_score.ToString();
         GameObject.FindGameObjectWithTag("hscore").GetComponent<Text>().text = m_hiscore.ToString();
         GameObject.Find("final").GetComponent<CanvasGroup>().alpha = 1;

@@ -4,6 +4,7 @@ using System.Collections;
 public class Game2_block : MonoBehaviour {
     public int m_point = 1;
     public GameObject explosion;
+    public AudioClip explod;
     void Start () {
 	}
 
@@ -27,6 +28,9 @@ public class Game2_block : MonoBehaviour {
         //碰到球，结束。
         if (other.tag.CompareTo("Player") == 0)
         {
+            GameObject.Find("EventSystem").GetComponent<AudioSource>().Stop();
+            AudioSource.PlayClipAtPoint(explod, GameObject.Find("MainCamera").transform.localPosition);
+            
             //Instantiate(explosion, other.transform.position, other.transform.rotation);
             Game2Manager.Instance.final();
         }

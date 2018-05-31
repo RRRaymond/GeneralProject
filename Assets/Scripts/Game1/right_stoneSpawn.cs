@@ -17,7 +17,6 @@ public class right_stoneSpawn : MonoBehaviour {
         int maxstep = (int)100.0 / ((cnt / 10) + 1) + 200;
         float timestep = Random.Range(100, maxstep) / 100;
 		yield return new WaitForSeconds (timestep);
-		Debug.Log(m_transform.position);
 		Vector3 new_postion = m_transform.position;
 
 		int temp = Random.Range (1, 50);

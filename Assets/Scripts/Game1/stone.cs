@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Threading;
 
 public class stone : MonoBehaviour {
     public int m_point = 1;
@@ -7,6 +8,8 @@ public class stone : MonoBehaviour {
     public static bool absorbr = false;
     public GameObject explosion;
     public Vector3 _position;
+    public AudioClip explod;
+    public AudioClip absorb;
 	// Use this for initialization
 	void Start () {
     }
@@ -32,12 +35,14 @@ public class stone : MonoBehaviour {
                 {
                     //Destroy(GameObject.FindGameObjectWithTag("leftHero"));
                     //Game1Manager.Instance.flag = true;
+                    
                     Game1Manager.Instance.final();
                 }
 
             }
             if (other.tag.CompareTo("leftHero") == 0)
             {
+                AudioSource.PlayClipAtPoint(absorb, GameObject.Find("MainCamera").transform.localPosition);
                 Game1Manager.Instance.AddScore(m_point);
                 Destroy(this.gameObject);
                 _position = this.transform.position;
@@ -52,11 +57,18 @@ public class stone : MonoBehaviour {
             }
             if (other.tag.CompareTo("rightHero") == 0)
             {
-                Instantiate(explosion, other.transform.position, other.transform.rotation);
+                GameObject.Find("EventSystem").GetComponent<AudioSource>().Stop();
+                AudioSource.PlayClipAtPoint(explod, GameObject.Find("MainCamera").transform.localPosition);
+
                 this.gameObject.SetActive(false);
+                Instantiate(explosion, other.transform.position, other.transform.rotation);
+
                 //Destroy(this.gameObject);
                 other.gameObject.SetActive(false);
+
                 Game1Manager.Instance.final();
+                //AudioSource.PlayClipAtPoint(explod, transform.localPosition);
+                //Time.timeScale = 0;
                 //Destroy(other.gameObject);
                 //Game1Manager.Instance.flag = true;
 

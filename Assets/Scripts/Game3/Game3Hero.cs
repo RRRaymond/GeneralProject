@@ -10,13 +10,18 @@ public class Game3Hero : MonoBehaviour {
 	public float direction = Mathf.PI/2f;
 	public bool isrotating = false;
 	public Game3touch game3Touch;
+    //public AudioClip explod;
+    //public AudioClip click;
+
+    private bool isalive = true;
 
     //位移/分数的倍数
-    public int times = 3;
+    public int times;
 
 	// Use this for initialization
 	void Start () {
-		
+        Time.timeScale = 1;
+        isalive = true;
 	}
 	
 	// Update is called once per frame
@@ -29,6 +34,7 @@ public class Game3Hero : MonoBehaviour {
         {
             if (isrotating)
             {
+                //AudioSource.PlayClipAtPoint(click, transform.localPosition);
                 circularMotion();
                 return;
             }
@@ -56,8 +62,16 @@ public class Game3Hero : MonoBehaviour {
                 return;
             }
         }
-        else if (x > 3.8 || x < -3.8)
+        else if (isalive&&(x > 3.8 || x < -3.8))
+        {
+            //循环播放？
+            //GameObject.Find("EventSystem").GetComponent<AudioSource>().Stop();
+            //AudioSource.PlayClipAtPoint(explod, transform.localPosition);
+            isalive = false;
             Game3Manager.Instance.final();
+            return;
+        }
+            
 		isrotating = false;
 		linearMotion();
 
@@ -127,11 +141,11 @@ public class Game3Hero : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("碰撞产生，collid happened!!!");
         //碰到球，结束。
         if (other.tag.CompareTo("enemy") == 0)
         {
-            Debug.Log("碰到球了，collid happened!!!");
+            //GameObject.Find("EventSystem").GetComponent<AudioSource>().Stop();
+            //AudioSource.PlayClipAtPoint(explod, transform.localPosition);
             Game3Manager.Instance.final();
         }
         

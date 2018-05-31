@@ -11,6 +11,7 @@ public class Game2_HeroMove : MonoBehaviour {
 	private float tempAngle;
 	private bool istouched;
     public float speed = 1;
+    public AudioClip click;
 	// Use this for initialization
 	void Start () {
 		direction = false;
@@ -39,16 +40,17 @@ public class Game2_HeroMove : MonoBehaviour {
 		tempPosition.z = 0;
 		hero2.transform.position = tempPosition;
 		hero1.transform.position = 2 * centerPoint - tempPosition;
-		Debug.Log(tempPosition);
 	}
 
 	void MobilePick()  {  
 		if (Input.touchCount != 1 )  
-			return;  
-	
-		if (Input.GetTouch(0).phase == TouchPhase.Began)  
-		{  
-			RaycastHit hit;  
+			return;
+        
+        if (Input.GetTouch(0).phase == TouchPhase.Began)  
+		{
+            if (!istouched)
+                AudioSource.PlayClipAtPoint(click, GameObject.Find("MainCamera").transform.localPosition);
+            RaycastHit hit;  
 			Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);  
 	
 			if (Physics.Raycast(ray, out hit))  
@@ -62,10 +64,13 @@ public class Game2_HeroMove : MonoBehaviour {
 			istouched = false;
 		}
 	} 
-	void MousePick()  {  
-		if(Input.GetMouseButtonDown(0))  
-		{  
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);  
+	void MousePick()  {
+        
+        if (Input.GetMouseButtonDown(0))  
+		{
+            if(!istouched)
+                AudioSource.PlayClipAtPoint(click, GameObject.Find("MainCamera").transform.localPosition);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);  
 			RaycastHit hit;  
 	
 			if (Physics.Raycast(ray, out hit))  

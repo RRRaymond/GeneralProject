@@ -13,7 +13,6 @@ public class BtnPause : MonoBehaviour {
     }
     private void OnClick()
     {
-        Debug.Log("正常调用了点击事件");
         Time.timeScale = 0;
         GameObject.Find("pause").GetComponent<CanvasGroup>().alpha = 1;
         GameObject.Find("pause").GetComponent<CanvasGroup>().interactable = true;

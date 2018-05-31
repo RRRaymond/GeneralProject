@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class BtnRestart3 : MonoBehaviour {
 
+    //public AudioClip buttonClick;
     // Use this for initialization
     void Start()
     {
@@ -14,6 +15,7 @@ public class BtnRestart3 : MonoBehaviour {
     }
     private void OnClick()
     {
+        //AudioSource.PlayClipAtPoint(buttonClick, transform.localPosition);
         Time.timeScale = 1;
         SceneManager.LoadScene("Game3");
     }

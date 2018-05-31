@@ -7,8 +7,9 @@ public class state : MonoBehaviour {
     public float speed = 2.5f;
 	private GameObject hero;
 	private bool islocked = false;
+    public AudioClip click;
 
-	public enum herostate{
+    public enum herostate{
 		left,right
 	}
 
@@ -19,7 +20,6 @@ public class state : MonoBehaviour {
 		}
 		set{
 			channel =value;
-			Debug.Log(channel);
 		}
 	}
 	
@@ -27,7 +27,8 @@ public class state : MonoBehaviour {
 		if(islocked)
 			return;
 		islocked = true;
-		if(Channel == herostate.right){
+        AudioSource.PlayClipAtPoint(click, GameObject.Find("MainCamera").transform.localPosition);
+        if (Channel == herostate.right){
 			//iTween.MoveTo(hero,hero.transform.position + new Vector3(-2, 0, 0), 1.5f);
 			Channel = herostate.left;
 			iTween.MoveTo(hero,iTween.Hash(

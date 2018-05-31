@@ -6,6 +6,7 @@ public class Game3touch : MonoBehaviour {
 
 
 	private bool istouched = false;
+    public AudioClip click;
 	public bool checktouch(){
 		return istouched;
 	}
@@ -22,8 +23,14 @@ public class Game3touch : MonoBehaviour {
 
 	void MousePick()  {  
 		if(Input.GetMouseButtonDown(0))  
-		{  
-			istouched = true;
+		{
+            if (!istouched)
+            {
+                Debug.Log("click");
+                AudioSource.PlayClipAtPoint(click, GameObject.Find("MainCamera").transform.localPosition);
+            }
+                
+            istouched = true;
 		}  
 		else if (Input.GetMouseButtonUp(0)){
 			istouched = false;

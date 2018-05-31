@@ -14,7 +14,7 @@ public class Rank2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void OnClick () {
-		Debug.Log("正常调用了积分榜2事件");
+		//Debug.Log("正常调用了积分榜2事件");
 		this.GetComponent<Image>().sprite = Resources.Load("ji2", typeof(Sprite)) as Sprite;
 //		GameObject obj1=GameObject.Find("Canvas/rankall");
 //		obj1.GetComponent<Image>().sprite = Resources.Load("zong1", typeof(Sprite)) as Sprite;
