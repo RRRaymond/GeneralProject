@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;//使用 该引用，才能获得 Text 组件。
 using UnityEngine;
-
+using System.Net;
+using System.IO;
+using System.Text;
+using LitJson;
 public class Game3Manager : MonoBehaviour {
 
     public static Game3Manager Instance;
@@ -44,6 +47,29 @@ public class Game3Manager : MonoBehaviour {
     public void final()
     {
         Time.timeScale = 0;
+        if (m_hiscore < m_score){
+
+            m_hiscore = m_score;
+
+            var request = (HttpWebRequest)WebRequest.Create("http://closecv.com:5000/api/score");
+            
+            var postData = "Game=3" + "&Score=" + m_hiscore.ToString();
+            var data = Encoding.UTF8.GetBytes(postData);
+            
+            request.Method = "POST";
+            request.ContentType = "application/x-www-form-urlencoded";
+            request.ContentLength = data.Length;
+            request.CookieContainer = new CookieContainer();
+            request.CookieContainer.Add(new Cookie("UID", userName.uid.ToString(), "/", "closecv.com"));
+            request.Timeout = 2000;
+
+            using (var stream = request.GetRequestStream())
+            {
+                stream.Write(data, 0, data.Length);
+            }
+            
+            var response = (HttpWebResponse)request.GetResponse();
+        }
         GameObject.Find("EventSystem").GetComponent<AudioSource>().Stop();
         AudioSource.PlayClipAtPoint(explod, GameObject.Find("MainCamera").transform.localPosition);
         
@@ -59,9 +85,9 @@ public class Game3Manager : MonoBehaviour {
     {
         m_score = (int)point;
 
-        //更新高分记录
-        if (m_hiscore < m_score)
-            m_hiscore = m_score;
+        // //更新高分记录
+        // if (m_hiscore < m_score)
+        //     m_hiscore = m_score;
     }
 
     public int HightScore()

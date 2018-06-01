@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Net;
+using System.IO;
+using System.Text;
+using LitJson;
 
 public class Rank2 : MonoBehaviour {
 
@@ -25,6 +29,15 @@ public class Rank2 : MonoBehaviour {
 
 		string[] names = { "陈胖1", "陈钧涛陈胖2", "采芒果的小胖胖", "游小小小小胖", "喵喵胖" };
 		int[] scores = { 1024, 512, 256, 128, 64 };
+
+		var request = (HttpWebRequest)WebRequest.Create("http://closecv.com:5000/api/score/game2");
+		var response = (HttpWebResponse)request.GetResponse();
+		var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+		var resJson = JsonMapper.ToObject(responseString);
+		for(var i=0;i<5;i++){
+			names[i] = (string)resJson["Content"][i]["Username"];
+			scores[i] = (int)resJson["Content"][i]["Score"];
+		}
 
 		GameObject player1=GameObject.Find("Canvas/name1");
 		player1.GetComponent<Text>().text = names[0];

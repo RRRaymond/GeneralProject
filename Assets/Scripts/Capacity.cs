@@ -21,9 +21,9 @@ public class Capacity : MonoBehaviour {
     void Start () {
         //if (Game1Manager.Instance == null || Game2Manager.Instance == null || Game3Manager.Instance == null)
         //    return;
-        hGame1 = Game1Manager.Instance.HightScore();
-        hGame2 = Game2Manager.Instance.HightScore();
-        hGame3 = Game3Manager.Instance.HightScore();
+        hGame1 = Game1Manager.m_hiscore;
+        hGame2 = Game2Manager.m_hiscore;
+        hGame3 = Game3Manager.m_hiscore;
 
         //hGame1 = 30;
         //hGame2 = 10;
