@@ -34,7 +34,7 @@ public class NameOk : MonoBehaviour {
             request.Method = "POST";
             request.ContentType = "application/x-www-form-urlencoded";
             request.ContentLength = data.Length;
-            request.Timeout = 2000;
+            // request.Timeout = 10000;
 
             using (var stream = request.GetRequestStream())
             {
